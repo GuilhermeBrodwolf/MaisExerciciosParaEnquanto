@@ -1,0 +1,104 @@
+programa
+{
+	
+	funcao inicio()
+	{
+/*
+ *	5. Chico tem 1,50 metro e cresce 2 centímetros por ano, enquanto Zé tem 1,10 metro e cresce 3 centímetros por ano. 
+ *	Construa um algoritmo que calcule e imprima quantos anos serão necessários para que Zé seja maior que Chico. 
+ 
+
+	real alturachico = 1.50, crescimentochico = 0.02
+ 	real alturaze = 1.10, crescimentoze = 0.03
+	
+	
+	inteiro ano = 0
+	
+
+		enquanto(alturaze < alturachico){
+			
+			alturachico = alturachico + crescimentochico
+			alturaze = alturaze + crescimentoze
+			ano = ano++
+			
+		}
+
+		escreva("vai ser necessário ", ano, " anos para Zé passar a altura de chico")
+*/
+
+/*
+ * 6. Construa um algoritmo que calcule a média aritmética das 3 notas dos alunos de uma classe. O algoritmo deverá ler, além das notas, 
+ * o código (de três dígitos) do aluno e deverá ser encerrado quando o código for igual a zero.
+ 
+
+ 	inteiro codigoAluno = 1, aluno = 0
+ 	real nota1, nota2, nota3, media
+	
+	enquanto(codigoAluno != 0){
+	escreva("Digite o código do aluno desejado \n")
+	leia(codigoAluno)
+	
+		se(codigoAluno == 0){
+			escreva("escolha um código de aluno válido! \n")
+			pare			
+		}
+
+	escreva("Digite as 3 notas do aluno selecionado \n")
+	leia(nota1, nota2, nota3)
+		
+	media = (nota1 + nota2 + nota3) / 3
+
+	escreva("A média do aluno: ", codigoAluno, " é ", media, "\n")
+		
+	}
+*/
+
+/*
+ * 7. Elabore um algoritmo que leia a medida em metros de frente e fundo de um número indeterminado de terrenos. 
+ * O algoritmo deverá calcular e mostrar a área do terreno. Deverá parar somente quando a área de um terreno for inferior a 100 metros quadrados.
+ 
+
+ 	real frente, lado, metroQuadrado = 0.0
+ 	
+ 	faca {
+ 		
+ 	escreva("Digite a medida da frente do terreno: \n")
+ 	leia(frente)
+
+ 	escreva("Digite a medida lateral do terreno: \n")
+ 	leia(lado)
+
+ 	metroQuadrado = frente * lado 	
+ 	
+ 	}
+	
+	enquanto(metroQuadrado < 100.00)
+	escreva("Seu terreno tem ", metroQuadrado, "m². Nesse caso, não atendemos o seu pedido \n")
+*/
+
+/*
+ * 8. Escreva um algoritmo que leia 50 valores e encontre o maior e o menor deles. Mostre o resultado. 
+
+
+	inteiro contador, valor, maior = 0, menor = 0
+		escreva("Digite 5 valores para descobrismos qual será o maior e o menor: \n")
+		leia(valor)
+	
+          menor = valor
+          
+	para(contador = 1; contador <= 4; contador++){
+
+		escreva("\n Digite 5 valores para descobrismos qual será o maior e o menor: \n")
+		leia(valor)
+
+		se(valor > maior){
+		maior = valor
+          }se(valor < menor){
+          menor = valor
+          }
+	
+		
+	}
+	escreva("o valor maior foi: ", maior, "\n")
+	escreva("o valor menor foi: ", menor)
+*/
