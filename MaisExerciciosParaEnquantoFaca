@@ -102,3 +102,61 @@ programa
 	escreva("o valor maior foi: ", maior, "\n")
 	escreva("o valor menor foi: ", menor)
 */
+
+/*
+
+		// 9. Faça um algoritmo que receba a idade, altura e peso de 10 pessoas. Calcule e mostre:
+		// a) a quantidade de pessoas com idade superior a 50 anos;
+		// b) a média das alturas das pessoas com idade entre 10 e 20 anos;
+		// c) a porcentagem de pessoas com peso inferior a 40 quilos entre todas as pessoas.
+
+		inteiro contador = 0
+
+		inteiro idade50 = 0
+
+		real contMediaAltura = 0.0
+
+		inteiro contMagro = 0
+
+		real mediaAltura = 0.0
+
+		para(contador = 1; contador <= 2; contador++){
+			
+		inteiro idade
+		escreva("Digite sua idade: \n")
+		leia(idade)
+		
+		real altura
+		escreva("Digite sua altura: \n")
+		leia(altura)
+		
+		real peso
+		escreva("Digite seu peso: \n")
+		leia(peso)
+		
+			se(idade > 50){
+				idade50++
+			}
+			se(idade >= 10 e idade <= 20){
+				mediaAltura = mediaAltura + altura
+				contMediaAltura++
+			}
+
+			se(peso < 40.0){
+				contMagro++
+					
+
+		escreva("\n")					
+				
+			}				
+		}
+
+		escreva(idade50, " é a quantidade de pessoa com mais de 50 anos \n")
+
+		escreva((mediaAltura / contMediaAltura), " é a média da altura entre as pessoas de 10 a 20 anos \n")
+
+		escreva((contador / contMagro) * 100, "% é a porcentagem de pessoas abaixo de 40 quilos")
+*/			
+	}
+}
+
