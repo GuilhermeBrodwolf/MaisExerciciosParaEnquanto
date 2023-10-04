@@ -157,6 +157,166 @@ programa
 
 		escreva((contador / contMagro) * 100, "% é a porcentagem de pessoas abaixo de 40 quilos")
 */			
+
+/*	
+ * 	10. recadados com a aplicação de multas de trânsito. 
+ * 	O algoritmo deve ler as seguintes informações para 20 moCrie um algoritmo que ajude o DETRAN a calcular o total de recursos que foram artoristas:
+	- número da carteira de motorista (número inteiro de 4 dígitos);
+	- número de multas do motorista;
+	- valor da multa (considerando que todas as multas de um motorista tem o mesmo valor).
+	Ao final da leitura, deve-se apresentar o total de recursos arrecadados (somatório das multas de todos motoristas). 
+	O algoritmo deverá mostrar também o número da carteira do motorista que obteve o maior número de multas.
+
+
+		inteiro carteiraMotorista, quantidadeMultas, maisMultas = 0, carteiraMotoristaMaior = 0
+		real valorMulta = 200.00, totalArrecadado = 0.0
+	
+		
+		
+		para(inteiro controle = 1; controle <= 2; controle++){
+			
+			escreva("Digite o número de 4 digitos da CNH do motorista \n")
+			leia(carteiraMotorista)
+
+			escreva("Quantas multas o motorista levou? \n")
+			leia(quantidadeMultas)
+
+			totalArrecadado = totalArrecadado + valorMulta * quantidadeMultas
+
+			se(maisMultas < quantidadeMultas){
+					maisMultas = quantidadeMultas
+					carteiraMotoristaMaior = carteiraMotorista
+					
+				}
+			
+		}
+
+			escreva("O total arrecadado em foi em multas foi: R$", totalArrecadado, "\n")
+			
+			escreva("O motorista que fez mais infrações de trânsito, fez um total de: ", carteiraMotoristaMaior, " multas \n")
+
+*/
+
+
+/*
+ * 
+ * 	11. Elaborar um algoritmo que leia os limites inferior e superior de um intervalo e mostre todos os números pares no intervalo, bem como, o somatório dos pares. 
+ * 	Suponha que os números digitados são um intervalo crescente. Exemplo:
+	Limite inferior: 3
+	Limite superior: 12
+	Pares: 4 6 8 10
+	Soma dos pares: 28
+
+
+
+		inteiro numSup, numInf, soma = 0
+
+			escreva("Digite um valor: \n")
+			leia(numInf)
+
+			escreva("Digite um valor: \n")
+			leia(numSup)
+
+			para(numInf; numInf <= numSup; numInf++){
+
+				se(numInf % 2 == 0){
+					escreva("\n", numInf)
+
+					soma = soma + numInf
+				}
+				
+		}
+	
+			escreva("\n", soma)
+
+*/
+
+
+/*
+ * 12. Faça um algoritmo que leia 20 números inteiros e positivos e calcule o produto dos númerospares e o somatório dos ímpares. 
+ * Além disso, deve-se verificar a quantidade de pares e ímpares informados. O algoritmo não poderá aceitar valores negativos, nem zero. 
+ * O fim da leitura seráindicado pelo número 0.
+
+
+ 		inteiro numSup, numInf, soma = 0
+
+ 		escreva("Digite um valor inteiro \n")
+ 		leia(numInf)
+
+ 		escreva("Digite o segundo valor inteiro \n")
+ 		leia(numSup)
+
+ 			para(numInf; numInf <= numSup; numInf++){
+
+ 				se(numInf % 2 == 1){
+ 					escreva("\n", numInf)
+
+ 					soma = soma + numInf
+ 				}
+ 		}
+
+			escreva("\n", soma)
+
+*/
+
+/* (INCOMPLETO)
+ * 13. Foi realizada uma pesquisa entre os habitantes de uma região. Sendo assim, foram coletados os dados de idade, sexo (M/F) e salário. 
+ * Encerre a entrada de dados quando for digitada uma idade zero. Faça um algoritmo que informe:
+a) a média de salário dos homens;
+b) a média de salário das mulheres;
+c) a média de salário do grupo;
+22
+d) o homem mais velho;
+e) a mulher mais nova;
+
+*/
+
+		
+		inteiro idade, controle = 0
+		real salario = 0.0, mediaSalarioH = 0.0, mediaSalarioF = 0.0, mediaSalarioGrupo = 0.0
+		caracter sexo
+
+			faca{				
+
+				escreva("Qual sua idade? \n")
+				leia(idade)
+
+				se(idade == 0){
+					escreva("Digite uma idade válida \n")
+					pare
+				}
+														
+				escreva("qual seu sexo? \n")
+				leia(sexo)
+
+					se(sexo == 'M' ou sexo == 'm'){
+
+						mediaSalarioH = mediaSalarioH + salario
+						
+					}senao se(sexo == 'F' ou sexo == 'f'){
+
+						mediaSalarioF = mediaSalarioF + salario
+						
+					}senao{
+					escreva("escreva uma opção válida \n")
+
+					}
+
+				escreva("Qual é o seu salário? \n")
+				leia(salario)
+					
+				
+		
+	
+		}enquanto(idade != 0)				
+
+		escreva("A média de salário dos homens é: R$", mediaSalarioH, " Reais \n")
+		
+		escreva("A média de salário das mulheres é: R$", mediaSalarioF, " Reais \n")mediaSalarioGrupo
+		
+		escreva("A média de salário do grupo é: R$", mediaSalarioGrupo, " Reais \n")
 	}
+								
 }
+
 
